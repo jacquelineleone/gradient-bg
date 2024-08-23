@@ -25,5 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
     tgY = event.clientY;
   });
 
+  window.addEventListener("touchmove", (event) => {
+    const touch = event.touches[0];
+    tgX = touch.clientX;
+    tgY = touch.clientY;
+  });
+
   move();
 });
