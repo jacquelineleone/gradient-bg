@@ -6,7 +6,6 @@ body {
 }
 
 :root {
-  /* change variables name & values */
   --main-bg-color: rgb(230, 205, 209);
   --main-bg-color-secondary: rgb(219, 214, 220);
   --custom-purple: 168, 6, 250;
@@ -69,12 +68,24 @@ body {
   left: 0;
 }
 
+.grainy-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.3;
+  filter: url(#grainy);
+}
+
 svg {
   display: none;
 }
 
 .gradients-container {
   filter: url(#goo) blur(40px);
+
   width: 100%;
   height: 100%;
 }
